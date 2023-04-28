@@ -3,8 +3,8 @@ package BackJun.Step004;
 /**
  * @Author: kyu05017
  * @Date: 2023/04/25
- * @Description: 백준 단계별 연습문제 풀이 4단계 1번
- * @Ttitle : 개수 세기
+ * @Description: 백준 단계별 연습문제 풀이 4단계 3번
+ * @Ttitle : 최소최대
  */
 
 import java.util.Scanner;
