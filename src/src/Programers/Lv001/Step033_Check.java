@@ -4,11 +4,11 @@ import java.util.*;
 /**
  * @Author: kyu05017
  * @Date: 2023/05/01
- * @Description: 프로그래머스 Lv01 34단게
+ * @Description: 프로그래머스 Lv01 33단게
  * @Ttitle : 배열 만들기 2
  */
 
-public class Step033 {
+public class Step033_Check {
 
 	public static void main(String[] args) {
 		solution(5,555);

@@ -5,7 +5,7 @@ import java.util.Arrays;
 /**
  * @Author: kyu05017
  * @Date: 2023/05/01
- * @Description: 프로그래머스 Lv01 33단게
+ * @Description: 프로그래머스 Lv01 32단게
  * @Ttitle : 수열과 구간 쿼리 4
  */
 
