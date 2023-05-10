@@ -8,7 +8,7 @@ import java.util.stream.Stream;
 /**
  * @Author: kyu05017
  * @Date: 2023/05/09
- * @Description: 프로그래머스 Lv01 39단게
+ * @Description: 프로그래머스 Lv01 40단게
  * @Ttitle : 9로 나눈 나머지
  */
 
@@ -45,7 +45,6 @@ public class Step040 {
 		// 어레이 스트림
 		int j = Arrays.stream(number.split("")).mapToInt(Integer::parseInt).sum()%9;
 		int k = Stream.of(number.split("")).mapToInt(Integer::parseInt).sum()%9;
-
 		int test = 123456;
 
 		return answer;

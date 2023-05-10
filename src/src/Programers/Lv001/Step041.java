@@ -5,7 +5,7 @@ package Programers.Lv001;
 /**
  * @Author: kyu05017
  * @Date: 2023/05/09
- * @Description: 프로그래머스 Lv01 39단게
+ * @Description: 프로그래머스 Lv01 41단게
  * @Ttitle : 문자열 여러 번 뒤집기
  *
  */
