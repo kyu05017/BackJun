@@ -1,12 +1,13 @@
 package Programers.Lv001;
 
 
+import java.util.ArrayList;
 
 /**
  * @Author: kyu05017
  * @Date: 2023/05/10
  * @Description: 프로그래머스 Lv01 42단게
- * @Ttitle : 문자열 여러 번 뒤집기
+ * @Ttitle : 배열 만들기 5
  *
  */
 
@@ -14,24 +15,24 @@ public class Step042 {
 
 	public static void main(String[] args) {
 
-		System.out.println(solution("rermgorpsam",new int[][]{{2, 3}, {0, 7}, {5, 9}, {6, 10}}));
+		System.out.println(solution(new String[]{"0123456789","9876543210","9999999999999"},50000,5,5));
 	}
-	public static String solution(String my_string, int[][] queries) {
-		String answer = "";
-		String temp = my_string;
+	public static int[] solution(String[] intStrs, int k, int s, int l) {
+		ArrayList<Integer> list = new ArrayList<>();
 
-		for(int i = 0;i < queries.length; i++) {
-			String start = temp.substring(0,queries[i][0]);
-			String end = temp.substring(queries[i][1]+1,my_string.length());
-			String mid = temp.substring(queries[i][0],queries[i][1]+1);
-			char[] midchar = mid.toCharArray();
-			mid="";
-			for(int j=midchar.length-1;j>=0;j--){
-				mid+=midchar[j];
+		for(int i=0; i<intStrs.length;i++){
+			String task= intStrs[i].substring(s,s+l);
+			int chTask = Integer.parseInt(task);
+			if(chTask>k){
+				list.add(chTask);
 			}
-			temp = start+mid+end;
 		}
-		answer =temp;
+		int[] answer = new int[list.size()];
+
+		for(int i=0;i<answer.length;i++){
+			answer[i]=list.get(i);
+		}
+
 		return answer;
 	}
 }

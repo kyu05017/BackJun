@@ -18,12 +18,20 @@ public class Step041 {
 	}
 	public static String solution(String my_string, int[][] queries) {
 		String answer = "";
+		String temp = my_string;
 
-		for(int i = 0; i < queries.length; i++) {
-			for(int j = queries[i][1]; j < 0; i--){
-
+		for(int i = 0;i < queries.length; i++) {
+			String start = temp.substring(0,queries[i][0]);
+			String end = temp.substring(queries[i][1]+1,my_string.length());
+			String mid = temp.substring(queries[i][0],queries[i][1]+1);
+			char[] midchar = mid.toCharArray();
+			mid="";
+			for(int j=midchar.length-1;j>=0;j--){
+				mid+=midchar[j];
 			}
+			temp = start+mid+end;
 		}
+		answer =temp;
 		return answer;
 	}
 }
