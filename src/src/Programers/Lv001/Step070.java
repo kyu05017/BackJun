@@ -1,7 +1,6 @@
 package Programers.Lv001;
 
-import java.util.ArrayList;
-import java.util.List;
+import java.util.Arrays;
 
 /**
  * @Author: kyu05017
@@ -14,7 +13,7 @@ public class Step070 {
 	public static void main(String[] args) {
 		System.out.println(
 				(
-						solution(new int[]{34, 5, 71, 29, 100, 34}, 123)
+						(solution(new int[]{34, 5, 71, 29, 100, 34},123))
 				)
 		);
 	}
