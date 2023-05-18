@@ -28,7 +28,7 @@ public class Step161 {
 		}
 		Arrays.sort(tesk);
 		for(int i = 0;i <answer.length;i++){
-			if(tesk[i] % 1 != 0) {
+			if(tesk[i] % 1 != 0) { // 소수점이 없음으로 큰수가 앞으로 
 				answer[i] = n - (int)tesk[i];
 			} else {
 				answer[i] = (int)tesk[i] + n;
