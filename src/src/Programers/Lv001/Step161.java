@@ -1,10 +1,6 @@
 package Programers.Lv001;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Comparator;
-import java.util.List;
-
+import java.util.*;
 /**
  * @Author: kyu05017
  * @Date: 2023/05/18
@@ -20,14 +16,23 @@ public class Step161 {
 		);
 	}
 	public static int[] solution(int[] numlist, int n) {
-		List<Integer> list = new ArrayList<Integer>();
 		int[] answer = new int[numlist.length];
-		answer[0] = n;
-		for(int i =1; i< numlist.length;i++ ){
-			list.add(numlist[i] - n);
+		double[] tesk = new double[numlist.length];
+		List<Integer> list = new ArrayList<Integer>();
+		for(int i = 0; i < numlist.length; i++){
+			if(numlist[i] - n < 0){
+				tesk[i] = Math.abs((numlist[i] - n)-0.5);
+			} else {
+				tesk[i] = (numlist[i] - n);
+			}
 		}
-		for(Integer temp : list){
-			System.out.println(temp);
+		Arrays.sort(tesk);
+		for(int i = 0;i <answer.length;i++){
+			if(tesk[i] % 1 != 0) {
+				answer[i] = n - (int)tesk[i];
+			} else {
+				answer[i] = (int)tesk[i] + n;
+			}
 		}
 		return answer;
 	}
