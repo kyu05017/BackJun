@@ -18,36 +18,26 @@ public class Step173 {
 	}
 
 	public static int solution(int[][] d) {
-		int x = 0;
-		if(d[0][0] == d[2][0]){
-			if(d[0][1] < 0){
-				x = d[2][1] - d[0][1];
-			} else {
-				x = d[0][1] - d[2][1];
+		int[] x = new int[4],y = new int[4];
+		for(int i = 0; i < d.length; i++){
+			x[i] = d[i][0];
+			y[i] = d[i][1];
+		}
+		int Xmax = x[0],Xmin = x[0],YMax = y[0],Ymin = y[0];
+		for(int i = 0; i < x.length; i++){
+			if(Xmax < x[i]){
+				Xmax = x[i];
 			}
-		} else if(d[0][1] == d[2][1]){
-			if(d[2][0] < 0){
-				x = d[0][0] - d[2][0];
-			} else {
-				x = d[2][0] - d[0][0];
+			if(Xmin > x[i]){
+				Xmin = x[i];
+			}
+			if(YMax < y[i]){
+				YMax = y[i];
+			}
+			if(Ymin > y[i]){
+				Ymin = y[i];
 			}
 		}
-		int y = 0;
-		if(d[1][0] == d[3][0]){
-			if(d[1][0]  < 0){
-				y = d[3][1] - d[1][1];
-			} else {
-				y = d[1][1] - d[3][1];
-			}
-
-		} else if(d[1][1] == d[3][1]){
-			if(d[3][0] < 0){
-				y = d[1][0] - d[3][0];
-			} else{
-				y = d[3][0] - d[1][0];
-			}
-		}
-		int answer = Math.abs(x*y);
-		return x*y;
+		return (Xmax - Xmin) * (YMax-Ymin);
 	}
 }
