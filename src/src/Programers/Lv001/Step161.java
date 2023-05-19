@@ -3,7 +3,7 @@ package Programers.Lv001;
 import java.util.*;
 /**
  * @Author: kyu05017
- * @Date: 2023/05/18
+ * @Date: 2023/05/19
  * @Description: 프로그래머스 Lv01 161단게
  * @Ttitle : 문제 설명
  */

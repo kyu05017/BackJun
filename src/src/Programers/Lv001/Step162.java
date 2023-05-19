@@ -6,7 +6,7 @@ import java.util.List;
 
 /**
  * @Author: kyu05017
- * @Date: 2023/05/18
+ * @Date: 2023/05/19
  * @Description: 프로그래머스 Lv01 162단게
  * @Ttitle : 유한소수 판별하기
  */
