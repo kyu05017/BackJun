@@ -2,7 +2,7 @@ package Programers.Lv001;
 
 /**
  * @Author: kyu05017
- * @Date: 2023/05/19
+ * @Date: 2023/05/20
  * @Description: 프로그래머스 Lv01 175단게
  * @Ttitle : 컨트롤 제트
  */
