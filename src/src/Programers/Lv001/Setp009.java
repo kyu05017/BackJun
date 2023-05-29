@@ -1,0 +1,31 @@
+package Programers.Lv001;
+
+import java.util.Arrays;
+import java.util.Map;
+
+/**
+ * @Author: kyu05017
+ * @Date: 2023/05/30
+ * @Description: 프로그래머스 Lv1 5단게
+ * @Ttitle :정수 제곱근 판별
+ */
+
+
+public class Setp009 {
+	public static void main(String[] args) {
+		System.out.println((solution(121)));
+	}
+
+	public static long solution(long n) {
+		long answer = 0;
+
+		double temp = Math.sqrt(n);
+		if(temp % 10 != 1){
+			answer = -1;
+		} else {
+			answer = (int)Math.pow((temp+1),2);
+		}
+
+		return answer;
+	}
+}
