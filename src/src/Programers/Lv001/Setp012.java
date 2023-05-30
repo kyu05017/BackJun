@@ -5,8 +5,8 @@ import java.util.*;
 /**
  * @Author: kyu05017
  * @Date: 2023/05/30
- * @Description: 프로그래머스 Lv1 5단게
- * @Ttitle :문자열을 정수로 바꾸기
+ * @Description: 프로그래머스 Lv1 12단게
+ * @Ttitle :정수 내림차순으로 배치하기
  */
 
 

@@ -3,7 +3,7 @@ package Programers.Lv001;
 /**
  * @Author: kyu05017
  * @Date: 2023/05/30
- * @Description: 프로그래머스 Lv1 5단게
+ * @Description: 프로그래머스 Lv1 10단게
  * @Ttitle :문자열 내 p와 y의 개수
  */
 

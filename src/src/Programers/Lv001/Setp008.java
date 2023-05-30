@@ -6,7 +6,7 @@ import java.util.Collections;
 /**
  * @Author: kyu05017
  * @Date: 2023/05/30
- * @Description: 프로그래머스 Lv1 5단게
+ * @Description: 프로그래머스 Lv1 8단게
  * @Ttitle : 자연수 뒤집어 배열로 만들기
  */
 
