@@ -4,7 +4,7 @@ import java.util.Arrays;
 
 /**
  * @Author: kyu05017
- * @Date: 2023/05/30
+ * @Date: 2023/06/01
  * @Description: 프로그래머스 Lv1 36단게
  * @Ttitle : 예산
  */
